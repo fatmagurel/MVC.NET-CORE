@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EF_CodeFirstODEV.exe.config
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EF_CodeFirstODEV.exe
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EF_CodeFirstODEV.pdb
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.csprojAssemblyReference.cache
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.Form1.resources
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.Form2.resources
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.Properties.Resources.resources
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.csproj.GenerateResource.cache
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.csproj.CopyComplete
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.exe
+C:\Users\user\source\repos\EF_CodeFirstODEVKartalHoca\EF_CodeFirstODEV\obj\Debug\EF_CodeFirstODEV.pdb
