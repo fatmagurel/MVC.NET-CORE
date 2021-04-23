@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="row" style="margin-top:50px;">
+    <div class="col-lg-6 justify-content-center">
+        <form method="post">
+            <div id="header">Mail Gönderme</div>
+            <div id="mailTable">
+                <table class="table  table-bordered table-hover">
+                    <tr>
+                        <td>Mail Adresi</td>
+                        <td> : </td>
+                        <td>
+                            <input type="text" name="txtEmail" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Konu</td>
+                        <td> : </td>
+                        <td>
+                            <input type="text" name="txtKonu" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bilgi</td>
+                        <td> : </td>
+                        <td>
+                            <input type="text" name="txtBilgi" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>İçerik</td>
+                        <td> : </td>
+                        <td>
+                            <input type="text" name="txtIcerik" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="submit" class="btn btn-primary btn-block" name="btnGonder" value="Mail Gönder!"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="justify-content-center text-info bg-dark" style="height:200px; width:200px; ">
+            @ViewBag.Bilgi
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<UserWithData.Models.UserShortListViewModel>
+
+@{
+    ViewData["Title"] = "Kullanıcı Listesi";
+}
+
+<h1>Kullanıcı Listesi</h1>
+
+<p>
+    <a asp-controller="Users" asp-action="Create">Yeni Kullanıcı Aç</a>
+    <br />
+    <a asp-action="ReturnString">Return String </a>
+    <br />
+    <a asp-action="BosDondur">Boş Döndür</a>
+    <br />
+    <a asp-action="ReturnAction">ReturnAction</a>
+    <br />
+    <a asp-action="ReturnURL">Return URL - BilgeAdam</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <a asp-controller="Users" asp-action="Edit" asp-route-id="@item.Id">Değiştir</a> |
+                    <a asp-controller="Users" asp-action="Details" asp-route-id="@item.Id">Detay Göster</a> |
+                    <a asp-controller="Users" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

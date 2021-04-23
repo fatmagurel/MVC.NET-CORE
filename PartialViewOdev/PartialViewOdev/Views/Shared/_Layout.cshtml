@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<partial name="PartialViews/_HeadPartial" />
+
+<body>
+
+    <partial name="PartialViews/_NavigationPartial" />
+
+    <partial name="PartialViews/_HeaderPartial" />
+
+    <partial name="About" />
+
+    <partial name="Services" />
+
+    <partial name="Callout" />
+
+    <partial name="Portfolio" />
+
+    <partial name="CallToAction" />
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <partial name="PartialViews/_MapPartial" />
+    <partial name="PartialViews/_FooterPartial" />
+
+</body>
+
+</html>

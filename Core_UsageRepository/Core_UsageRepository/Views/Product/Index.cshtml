@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<a class="btn btn-primary" href="Product/Insert">Ürün Ekle</a>
+
+<div class="row" style="margin-top:50px;">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ürün Adı</th>
+                <th>Fiyatı</th>
+                <th>Kategorisi</th>
+                <th>Stok Miktarı</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Product urun in Model)
+            {
+                <tr>
+                    <td>@urun.ID</td>
+                    <td>@urun.ProductName</td>
+                    <td>@urun.Price</td>
+                    <td>@urun.Category</td>
+                    <td>@urun.Stock</td>
+                    <td>
+                        <a class="btn btn-warning" asp-controller="Product" asp-action="Update" asp-route-id="@urun.ID">Güncelle</a>
+
+                        <a class="btn btn-danger" asp-controller="Product" asp-action="Delete" asp-route-id="@urun.ID">Sil</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Sample";
+}
+
+<h1>Burası Sample View'ı</h1>
+
+@*@Html.Partial("_SamplePartial")*@
+<partial name="_SamplePartial"/>
+
+<hr />
+
+@{ 
+    string ad = "Bilge Adam";
+}
+
+<partial name="PartialViews/_OrnekPartial"/>
+<partial name="PartialViews/_DataPartial" model="ad"/>

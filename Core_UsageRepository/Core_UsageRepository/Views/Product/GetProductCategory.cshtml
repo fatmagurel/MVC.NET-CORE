@@ -1,0 +1,36 @@
+﻿@* ViewModel ile Birden fazla modeli almak için: *@
+@*@model Core_UsageRepository.Models.ViewModels.IndexVM*@
+
+@using Core_UsageRepository.Models.ViewModels
+@model Tuple<Category, IndexVM, List<Product>>
+
+@{
+    ViewData["Title"] = "GetProductCategory";
+}
+
+<h1>GetProductCategory</h1>
+
+@* ViewModel ile kullanımı *@
+
+@*@foreach (var item in Model.Products)
+{
+    <p>@item.ProductName</p>
+}
+
+@foreach (var item in Model.Categories)
+{
+    //<p>@item.CategoryName</p>
+}*@
+
+@foreach (var item in Model.Item2.Products)
+{
+    <p>@item.ProductName</p>
+    <p>@item.Price</p>
+
+}
+
+@foreach (var item in Model.Item3)
+{
+    <p>@item.ProductName</p>
+
+}

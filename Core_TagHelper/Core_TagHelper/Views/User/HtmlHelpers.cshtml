@@ -1,0 +1,30 @@
+﻿@model Core_TagHelper.Models.User
+@{
+    ViewData["Title"] = "HtmlHelpers";
+}
+
+<h1>HtmlHelpers</h1>
+
+<div class="row justify-content-center" style="margin-top:50px;">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                @using (Html.BeginForm("HtmlHelpers", "User",FormMethod.Post))
+                {
+                    <div class="form-group">
+                        <label for="userName">Kullanıcı Adı:</label>
+                        @Html.TextBoxFor(u => u.UserName, new { @class = "form-control"})
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Parola:</label>
+                        @Html.TextBoxFor(u => u.Password, new { @class = "form-control", @type = "password"})
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

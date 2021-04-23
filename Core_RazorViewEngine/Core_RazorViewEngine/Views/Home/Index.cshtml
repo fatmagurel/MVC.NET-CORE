@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h2>Razor View Engine Kullanımı</h2>
+@{
+    string ad = "Bilge";
+    string soyad = "Adam";
+    int yas = 24;
+}
+<br />
+<br />
+<p><b>Razor View Engine İle Değişken Çağırma</b></p>
+@ad @soyad - @yas
+<br />
+<br />
+
+<p><b>Razor View Engine ile Karar Yapıları</b></p>
+@{ int sayi = 56;}
+
+@if (sayi < yas)
+{
+    <span>Sayınız: <b>@sayi</b>(Sayı değeri, Yaş (<b>@yas</b>) değişkenin değerinden küçüktür.</span>
+}
+
+else if (sayi > yas)
+{
+    <span>Sayınız: <b>@sayi</b>(Sayı değeri, Yaş (<b>@yas</b>) değişkenin değerinden büyüktür.</span>
+}
+
+else
+{
+    <span>Sayınız: <b>@sayi</b>(Sayı değeri, Yaş (<b>@yas</b>) değişkenin değerine eşittir.</span>
+}
+
+<br />
+<br />
+
+<p><b>Razor View Engine ile Döngüler ve Koleksiyonlar</b></p>
+@{
+    string[] isimler = { "Bilge", "Ayşe", "Hayriye", "Ertan", "Ali", "Veli" };
+    string[] soyisimler = { "Adam", "Yılmaz", "Huriye", "Mertan", "Akıllı", "Mantıklı" };
+}
+
+@for (int i = 0; i < isimler.Length; i++)
+{
+    <p><b>@isimler[i]</b>@soyisimler[i]</p>
+}
+
+<br />
+@foreach (string item in isimler)
+{
+    <h4>@item</h4>
+}
+
+<br />
+<br />
+<br />
+
+<p><b>Razor View Engine ile Ternary If</b></p>
+@(11 > 10 ? "True ise yazılacak ifade" : "False ise yazılacak ifade")
+<br />
+@(yas > sayi ? "Yaş sayıdan büyüktür." : "Yaş sayıdan küçüktür.")
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
